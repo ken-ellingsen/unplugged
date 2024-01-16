@@ -87,21 +87,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   .content-wrapper{
-    outline: 3px dotted red;
-    width: 90%;
-    margin: 50px 0;
-   }
+.content-wrapper {
+  outline: 3px dotted red;
+  width: 90%;
+  margin: 50px 0;
+}
 
 /*---------------------- Base Header/Footer Styles -------------------------*/
 
-header{
+header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
 }
 
-header .content-wrapper{
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,17 +109,17 @@ header .content-wrapper{
   margin: 0;
 }
 
-.header-divider{
+.header-divider {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
 }
 
-header nav{
+header nav {
   width: 60%;
 }
 
-header nav ul{
+header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -132,90 +132,91 @@ footer {
   text-align: center;
 }
 
-footer p{
+footer p {
   margin: 0;
 }
 
-footer .content-wrapper{
+footer .content-wrapper {
   width: 55%;
 }
 
-footer .contact{
+footer .contact {
   margin-bottom: 50px;
 }
 
-footer .social-icons{
+footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-footer .social-icons p{
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .copyright{
+footer .copyright {
   margin: 20px 0;
 }
+
 /* ----------------------- Mobile Styles ------------------------ */
 
 /* -------------------- Homepage --------------------- */
 
 /* Hero Area */
-.hero-area{
+.hero-area {
   display: flex;
   justify-content: center;
 }
 
 /* Aside */
-aside{
+aside {
   display: flex;
   justify-content: center;
 }
 
 /* Features */
-.features{
+.features {
   display: flex;
   justify-content: center;
 }
 
-.features h2{
+.features h2 {
   margin-bottom: 60px;
 }
 
-.features .features-items{
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
 }
 
-.features article{
+.features article {
   width: 60%;
   margin: 30px 0;
 }
 
-features p{
+features p {
   margin: 0;
 }
 
-.feature-description{
+.feature-description {
   /* text-align: center; */
 }
 
 /* Reviews */
-.reviews{
+.reviews {
   display: flex;
   justify-content: center;
 }
 
-.reviews h2{
+.reviews h2 {
   margin-bottom: 40px;
 }
 
-.reviews h3{
+.reviews h3 {
   width: 52%;
   margin: 20px 0;
 }
@@ -223,28 +224,28 @@ features p{
 /* -------------------- About Page --------------------- */
 
 /* Mission */
-.mission{
+.mission {
   display: flex;
   justify-content: center;
 }
 
-.contact-section{
+.contact-section {
   display: flex;
   justify-content: center;
 }
 
-.contact-content p{
+.contact-content p {
   margin: 0;
 }
 
 /* Map */
-.map{
+.map {
   display: flex;
   justify-content: center;
 }
 
 /* Contact Section */
-.contact-section{
+.contact-section {
   display: flex;
   justify-content: center;
 }
@@ -252,12 +253,12 @@ features p{
 /* -------------------- FAQ Page --------------------- */
 
 /* FAQs */
-.faq{
+.faq {
   display: flex;
   justify-content: center;
 }
 
-.faq .content-wrapper{
+.faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -265,11 +266,11 @@ features p{
   margin: 50px 0 0 0;
 }
 
-faq .h2{
+faq .h2 {
   margin-bottom: 40px;
 }
 
-faq .content{
+faq .content {
   margin-bottom: 50px;
 }
 
@@ -361,15 +362,161 @@ faq .content{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+/************************* Tablet Styles ***********************/
+@media only screen and (min-width: 768px) {
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /***** Base Header/Footer Stylye *****/
+  header {
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /***** Homepage *****/
+  /* Hero Area */
+
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Features */
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .feature-description {
+    width: 50%;
+    text-align: center;
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  /***** About Page *****/
+  /* Mission */
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+
+  /* Map */
+
+  /* Contact Section */
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /***** FAQ Page *****/
+  /* FAQs */
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
 }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/************************ Desktop Styles **********************/
+@media only screen and (min-width: 1200px) {
+  /***** Base Header/Footer Stylye *****/
+
+
+
+  /***** Homepage *****/
+  /* Hero Area */
+
+  /* Aside */
+
+  /* Features */
+
+  /* Reviews */
+
+
+  /***** About Page *****/
+  /* Mission */
+
+  /* Map */
+
+  /* Contact Section */
+
+
+  /***** FAQ Page *****/
+  /* FAQs */
 }
 
 /* ==========================================================================
