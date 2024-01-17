@@ -87,6 +87,54 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*-------------------------- General Styles ---------------------------------*/
+
+html{
+  font-size: 1rem;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+ul, ol{
+  list-style-type: none;
+}
+
+a{
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2{
+  font-style: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+
+h3, h4{
+  font-style: 'Poppins', sans-serif;
+  font-size: 1.125em;
+}
+
+p{
+  font-size: 0.875em;
+  line-height: 1.125em;
+}
+
+img{
+
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+}
+
 .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
@@ -510,7 +558,7 @@ faq .content {
   }
 
   /* Aside */
-  aside .content-wrapper{
+  aside .content-wrapper {
     justify-content: space-around;
   }
 
@@ -520,34 +568,35 @@ faq .content {
   }
 
   /* Features */
-  .features h2{
+  .features h2 {
     width: 90%;
   }
 
-  .features article{
+  .features article {
     flex-basis: 33%;
   }
 
   /* Reviews */
-  .reviews article div{
+  .reviews article div {
     width: 45%;
   }
 
   /***** About Page *****/
   /* Mission */
-  .mission h2{
+  .mission h2 {
     width: 90%;
   }
+
   /* Map */
 
   /* Contact Section */
-  .contact-section .content-wrapper h2{
+  .contact-section .content-wrapper h2 {
     width: 90%;
   }
 
   /***** FAQ Page *****/
   /* FAQs */
-  .faq h2{
+  .faq h2 {
     width: 100%;
   }
 }
