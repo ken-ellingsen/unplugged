@@ -632,6 +632,9 @@ input[type=button] {
   }
 
   /* Map */
+  .map figure {
+    padding-bottom: 54.6875%;
+  }
 
   /* Contact Section */
   .contact-section .content-wrapper h2 {
@@ -747,6 +750,9 @@ input[type=button] {
   }
 
   /* Map */
+  .map figure {
+    padding-bottom: 46.875%;
+  }
 
   /* Contact Section */
   .contact-section .content-wrapper h2 {
